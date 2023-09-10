@@ -3,7 +3,7 @@ from flask import Flask, jsonify, make_response, request, abort
 from flask_cors import CORS
 
 app = Flask(__name__)
-# cors = CORS(app, resources={r"/*": {"origins": "*"}})
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 @app.errorhandler(404)
