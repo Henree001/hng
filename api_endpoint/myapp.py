@@ -36,5 +36,3 @@ def get_details():
 
     return jsonify(details)
 
-
-app.run(host='0.0.0.0', port='5000', debug=True)
